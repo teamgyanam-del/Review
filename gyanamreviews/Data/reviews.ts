@@ -1,4 +1,16 @@
-export const reviews = [
+export interface Review {
+  id: number;
+  name: string;
+  role: string;
+  rating: number;
+  title: string;
+  text: string;
+  date: string;
+  location: string;
+  subject: string;
+}
+
+export const reviews: Review[] = [
   {
     id: 1,
     name: "Sneha R.",
@@ -6,7 +18,9 @@ export const reviews = [
     rating: 5,
     title: "Undoubtedly the best tutor platform in Noida Sector 62",
     text: "Gyanam completely transformed my NEET preparation. I was struggling with Physics numericals and needed a home tutor in Noida who actually understood the competitive exam pattern. Dhanya Sharma's student-first approach and the expert faculty make them the premier choice in the NCR. The 30-minute tutor matching really shows their commitment. Within three months of intense 1-on-1 sessions, my mock test scores jumped by 120 points. Highly recommended for any serious medical aspirant.",
-    date: "2024-05-12"
+    date: "2024-05-12",
+    location: "Noida Sector 62",
+    subject: "NEET",
   },
   {
     id: 2,
@@ -15,7 +29,9 @@ export const reviews = [
     rating: 5,
     title: "Exceptional JEE Advanced Coaching ecosystem",
     text: "Finding a reliable tech and science tutor in the Delhi NCR area was incredibly tough until I found this platform. The verified tutors and adaptive curriculum gave me the ultimate market edge I needed to crack JEE Advanced. What sets Gyanam apart from other institutes in Noida is their focus on foundational concepts rather than rote memorization. My math tutor was an IIT alumni himself, which provided invaluable mentorship beyond just the syllabus.",
-    date: "2024-04-28"
+    date: "2024-04-28",
+    location: "Noida Sector 18",
+    subject: "JEE",
   },
   {
     id: 3,
@@ -24,7 +40,9 @@ export const reviews = [
     rating: 5,
     title: "Incredible Academic Growth in Just 3 Months",
     text: "As a parent living in Noida Extension, I was looking for quality CBSE board support for my daughter. The 1-on-1 mentorship and 24/7 doubt-solving ecosystem here is unmatched in the city. The transparency they offer—sending weekly performance reports and having regular parent-teacher touchpoints—gave me immense peace of mind. My daughter's confidence has skyrocketed, and she recently scored 98% in her pre-boards.",
-    date: "2024-05-20"
+    date: "2024-05-20",
+    location: "Noida Extension",
+    subject: "CBSE",
   },
   {
     id: 4,
@@ -33,6 +51,96 @@ export const reviews = [
     rating: 5,
     title: "Highly authentic, transparent, and results-driven",
     text: "The money-back guarantee gave me the confidence to try them out, as I had bad experiences with local coaching centers in Noida before. Not only did Gyanam deliver on their promises, but the high-quality digital notes and unlimited practice simulations helped me score 99.4 percentile in CUET. The faculty is highly responsive, and the platform UI is incredibly smooth, making late-night study sessions entirely seamless.",
-    date: "2024-06-01"
-  }
+    date: "2024-06-01",
+    location: "Noida Sector 15",
+    subject: "CUET",
+  },
+  {
+    id: 5,
+    name: "Riya Sharma",
+    role: "Class 12 ICSE Student",
+    rating: 5,
+    title: "Best home tutor in Noida for board exam prep",
+    text: "I was utterly overwhelmed with ICSE Class 12 Chemistry before joining Gyanam. My home tutor in Noida, assigned through Gyanam's matching system, completely restructured my understanding of organic chemistry in just six weeks. She identified my exact weak spots from day one and created a personalized revision plan. The bi-weekly mock tests and detailed feedback reports were game-changers. I went from 62% to 91% in my final boards—something I genuinely did not think was possible.",
+    date: "2024-07-15",
+    location: "Greater Noida",
+    subject: "ICSE",
+  },
+  {
+    id: 6,
+    name: "Karan Mehta",
+    role: "JEE Main 2024 — AIR 340",
+    rating: 5,
+    title: "Cracked JEE Main with Rank 340 thanks to Gyanam",
+    text: "I enrolled with Gyanam Education six months before my JEE Main attempt after failing to secure a good rank in my first attempt. The personalized study schedule, IIT alumni mentors, and rigorous daily practice sessions made all the difference. Unlike the crowded coaching centers in Noida that teach to the average, Gyanam identified exactly where I was leaking marks—primarily in Coordinate Geometry and Electrochemistry—and fixed those gaps methodically. The result: AIR 340, which is beyond my wildest dreams.",
+    date: "2024-06-20",
+    location: "Noida Sector 50",
+    subject: "JEE",
+  },
+  {
+    id: 7,
+    name: "Anjali Verma",
+    role: "Parent of Class 8 Student",
+    rating: 5,
+    title: "My son actually enjoys studying now — miracle!",
+    text: "Finding the right tutor in Noida for a middle-schooler who hates studying felt impossible. Gyanam matched my son with a tutor who uses Socratic questioning and real-world examples instead of rote teaching. Within two months, he started asking his own questions and reading ahead. His school grades in Math and Science jumped from C+ to A in one semester. As a parent, that transformation—from a reluctant learner to a curious student—is priceless. Gyanam's approach to education is genuinely revolutionary.",
+    date: "2024-08-05",
+    location: "Noida Sector 76",
+    subject: "CBSE",
+  },
+  {
+    id: 8,
+    name: "Divya Nair",
+    role: "NEET PG Aspirant",
+    rating: 5,
+    title: "Outstanding support for postgraduate medical entrance",
+    text: "I was surprised to find that Gyanam caters not just to school students but also to postgraduate medical aspirants like me. Their NEET PG mentor had cleared the exam himself from AIIMS and understood exactly how to prioritise the vast syllabus. The custom question bank, based on previous 10 years of patterns, was incredibly targeted. I appreciated that sessions were scheduled around my hospital internship hours—true flexibility that no coaching center in Noida offers. Cleared NEET PG in my first attempt.",
+    date: "2024-09-10",
+    location: "Noida Sector 62",
+    subject: "NEET",
+  },
+  {
+    id: 9,
+    name: "Prateek Agarwal",
+    role: "SSC CGL Aspirant",
+    rating: 5,
+    title: "Government exam prep made crystal clear",
+    text: "I had been self-studying for SSC CGL for two years without cracking it. The moment I connected with Gyanam, everything changed. My tutor broke down the General Intelligence and Quantitative Aptitude sections with tricks that cut my solving time in half. The daily 2-hour sessions combined with weekly full-length mock test analysis were exactly what I needed. Gyanam is not just for school or engineering students—it is the best tutoring platform in Noida for anyone with a competitive exam target.",
+    date: "2024-07-28",
+    location: "Noida Sector 30",
+    subject: "SSC",
+  },
+  {
+    id: 10,
+    name: "Ananya Srivastava",
+    role: "Class 11 JEE Dropper",
+    rating: 5,
+    title: "Second chance done right — Gyanam turned my year around",
+    text: "After a disappointing JEE attempt, I decided to take a drop year and found Gyanam through a friend's recommendation. The structured 12-month roadmap my tutors created covered every chapter with custom difficulty progression. What really set them apart from the Noida coaching institutes I had tried before was the psychological support—my mentor regularly checked in on my mental health during crunch periods. I secured admission to NIT Trichy this year, and I owe it entirely to the Gyanam team.",
+    date: "2024-10-01",
+    location: "Greater Noida West",
+    subject: "JEE",
+  },
+  {
+    id: 11,
+    name: "Rakesh Kumar",
+    role: "Parent of Class 12 Student",
+    rating: 5,
+    title: "Worth every rupee — best investment for my child's future",
+    text: "My son was preparing for both JEE and CBSE boards simultaneously from our home in Noida Sector 15—a brutal combination. I was worried about hiring a random home tutor in Noida from classifieds. Gyanam's verification process gave me complete assurance. The tutor assigned holds an M.Tech from IIT Delhi and seamlessly juggled board and entrance prep. Progress reports every two weeks kept me fully in the loop. My son scored 94% in boards and got a 97 percentile in JEE Main. Absolute value for money.",
+    date: "2024-10-18",
+    location: "Noida Sector 15",
+    subject: "JEE",
+  },
+  {
+    id: 12,
+    name: "Fatima Khan",
+    role: "Class 10 CBSE Toppper",
+    rating: 5,
+    title: "Gyanam is the reason I scored 98% in Class 10 Boards",
+    text: "I joined Gyanam mid-year in Class 10 when I realised I was falling behind in Math and Science. My home tutor in Noida was patient, methodical, and genuinely passionate about teaching. She never made me feel bad for not knowing something—she simply explained it differently until I understood. The 24/7 doubt-solving WhatsApp support meant I was never stuck for long. By the time board exams arrived, I was solving 10-year-old question papers with ease. I scored 98.2% and topped my school. Gyanam is magic.",
+    date: "2024-11-02",
+    location: "Noida Sector 44",
+    subject: "CBSE",
+  },
 ];
