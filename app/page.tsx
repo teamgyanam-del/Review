@@ -45,7 +45,7 @@ const jsonLd = {
   },
   openingHours: "Mo-Su 07:00-22:00",
   priceRange: "₹₹",
-  sameAs: ["https://gyanam.net"],
+  sameAs: ["https://gyanam.net", "https://www.instagram.com/gyanamofficials?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="],
   areaServed: [
     { "@type": "Place", name: "Noida Sector 15" },
     { "@type": "Place", name: "Noida Sector 18" },

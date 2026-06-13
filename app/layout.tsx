@@ -10,6 +10,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://reviews.gyanam.net"),
   title: {
     default: "Best Tutoring in Noida — Verified Student Reviews | Gyanam Education",
     template: "%s | Gyanam Education Reviews",
@@ -362,6 +363,7 @@ export default function RootLayout({
                 { label: "Read Reviews", href: "#reviews" },
                 { label: "Write a Review", href: "#write-review" },
                 { label: "FAQ", href: "#faq" },
+                { label: "Instagram", href: "https://www.instagram.com/gyanamofficials?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
               ].map((link) => (
                 <a
                   key={link.label}
