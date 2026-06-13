@@ -1,0 +1,50 @@
+{
+  "pages": {
+    "/_app": [
+      "static/chunks/0oa-_next_dist_compiled_1rlygny._.js",
+      "static/chunks/0oa-_next_dist_shared_lib_0w78d-r._.js",
+      "static/chunks/0oa-_next_dist_client_11clzg1._.js",
+      "static/chunks/0oa-_next_dist_13hh_xy._.js",
+      "static/chunks/1783_next_app_1tx5-kr.js",
+      "static/chunks/[next]_entry_page-loader_ts_1pb0yg8._.js",
+      "static/chunks/0oa-_react-dom_1v1juyz._.js",
+      "static/chunks/0oa-_0k4mh8e._.js",
+      "static/chunks/[root-of-the-server]__1exzrg5._.js",
+      "static/chunks/Review_gyanamreviews_pages__app_0du2_q-._.js",
+      "static/chunks/turbopack-Review_gyanamreviews_pages__app_1-0_qws._.js"
+    ],
+    "/_error": [
+      "static/chunks/0oa-_next_dist_compiled_1rlygny._.js",
+      "static/chunks/0oa-_next_dist_shared_lib_10uy2yp._.js",
+      "static/chunks/0oa-_next_dist_client_11clzg1._.js",
+      "static/chunks/0oa-_next_dist_0c0x-ce._.js",
+      "static/chunks/[next]_entry_page-loader_ts_00z7bvq._.js",
+      "static/chunks/0oa-_react-dom_1v1juyz._.js",
+      "static/chunks/0oa-_0k4mh8e._.js",
+      "static/chunks/[root-of-the-server]__0q-632g._.js",
+      "static/chunks/Review_gyanamreviews_pages__error_0du2_q-._.js",
+      "static/chunks/turbopack-Review_gyanamreviews_pages__error_1iq7pk6._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/1783_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js",
+    "static/development/_clientMiddlewareManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_1p7xpev._.js",
+    "static/chunks/1783_next_dist_compiled_next-devtools_index_0eccrlv.js",
+    "static/chunks/1783_next_dist_compiled_react-dom_12mn6zp._.js",
+    "static/chunks/1783_next_dist_compiled_react-server-dom-turbopack_1fw8ao6._.js",
+    "static/chunks/1783_next_dist_compiled_1ly-0xv._.js",
+    "static/chunks/1783_next_dist_client_09o8ori._.js",
+    "static/chunks/1783_next_dist_0_--c8u._.js",
+    "static/chunks/1783_@swc_helpers_cjs_1-iv01g._.js",
+    "static/chunks/Review_gyanamreviews_1anvha4._.js",
+    "static/chunks/turbopack-Review_gyanamreviews_0s3gzse._.js"
+  ]
+}
