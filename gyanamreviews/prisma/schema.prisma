@@ -1,0 +1,25 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Review {
+  id          String   @id @default(cuid())
+  name        String   // Full Name of student or parent
+  email       String   // To prevent spam and verify authenticity
+  role        String   // e.g., "JEE Aspirant", "Parent of Grade 10 Student"
+  rating      Int      // Integer value from 1 to 5
+  title       String   // Short review headline / title
+  text        String   @db.Text // The detailed review text body
+  isVerified  Boolean  @default(false) // Filter true for display to boost SEO authenticity
+  location    String   @default("Noida") // Helps isolate hyper-local targets for search engines
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isVerified, createdAt(sort: Desc)])
+  @@index([location])
+}
